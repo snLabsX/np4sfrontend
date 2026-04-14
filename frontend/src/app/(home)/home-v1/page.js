@@ -12,7 +12,6 @@ import PropertiesByCities from "@/components/home/home-v1/PropertiesByCities";
 import Testimonial from "@/components/home/home-v1/Testimonial";
 import Hero from "@/components/home/home-v1/hero";
 import Image from "next/image";
-import Blog from "@/components/common/Blog";
 import Link from "next/link";
 import PopulerProperty from "@/components/home/home-v1/PopulerProperty";
 
@@ -292,29 +291,6 @@ const Home_V1 = () => {
         </div>
       </section>
       {/* End Our Testimonials */}
-
-      {/* Explore Blog */}
-      <section className="pb90 pb20-md">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-6 m-auto" data-aos="fade-up">
-              <div className="main-title text-start text-md-center">
-                <h2 className="title">From Our Blog</h2>
-                <p className="paragraph">
-                  Aliquam lacinia diam quis lacus euismod
-                </p>
-              </div>
-            </div>
-          </div>
-          {/* End .row */}
-
-          <div className="row" data-aos="fade-up" data-aos-delay="300">
-            <Blog />
-          </div>
-          {/* End .row */}
-        </div>
-      </section>
-      {/* Explore Blog */}
 
       {/* Our Partners */}
       <section className="our-partners pt0">
