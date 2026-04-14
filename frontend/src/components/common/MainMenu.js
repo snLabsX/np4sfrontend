@@ -1,6 +1,5 @@
 import {
   homeItems,
-  blogItems,
   listingItems,
   propertyItems,
   pageItems,
@@ -19,11 +18,6 @@ const MainMenu = () => {
     homeItems.forEach((elm) => {
       if (elm.href.split("/")[1] == pathname.split("/")[1]) {
         setTopMenu("home");
-      }
-    });
-    blogItems.forEach((elm) => {
-      if (elm.href.split("/")[1] == pathname.split("/")[1]) {
-        setTopMenu("blog");
       }
     });
     pageItems.forEach((elm) => {
@@ -144,25 +138,6 @@ const MainMenu = () => {
         </ul>
       </li>
       {/* End property Items */}
-
-      <li className="visible_list dropitem">
-        <a className="list-item" href="#">
-          <span className={topMenu == "blog" ? "title menuActive" : "title"}>
-            Blog
-          </span>
-          <span className="arrow"></span>
-        </a>
-        <ul className="sub-menu">
-          {blogItems.map((item, index) => (
-            <li key={index}>
-              <Link className={`${handleActive(item.href)}`} href={item.href}>
-                {item.label}
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </li>
-      {/* End blog Items */}
 
       <li className="visible_list dropitem">
         <a className="list-item" href="#">
